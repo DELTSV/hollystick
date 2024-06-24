@@ -2,7 +2,7 @@
 
 ## Proposition de design
 
-
+![](schema.png)
 
 ## Questions
 
