@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="exo2.main" target="21" />
+      <module name="exo2.test" target="21" />
+      <module name="exo3" target="22" />
+      <module name="exo3.main" target="22" />
+      <module name="exo3.test" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
