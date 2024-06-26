@@ -16,13 +16,20 @@ The application run using command line args
 
 ### add \<taskName>
 
-Allow you to add a task to your list
+Add a task to your list
+
+### finish \<taskName>
+
+Set named task status to done
 
 ### list
 
 List all existing tasks
 
-### remove
+### remove \<taskName>
 
 Remove a task from the list (it will not be listed in the list command anymore)
 
+### report
+
+Create a text file containing task informations
