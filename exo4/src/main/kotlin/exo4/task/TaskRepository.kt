@@ -1,6 +1,6 @@
 package exo4.task
 
-class TaskRepository(private val dataSource: ITaskDataSource) : ITaskCommand, IReadTask {
+class TaskRepository(private val dataSource: ITaskDataSource): ITaskRepository {
 	override fun readTaskByStatus(status: Status) : List<Task> = dataSource.getTasks().filter { it.status == status }
 	override fun readAll() : List<Task> = dataSource.getTasks()
 

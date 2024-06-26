@@ -6,7 +6,7 @@ interface IOutput {
 	fun displayTask(task: Task, index: Int)
 
 	fun displayTasks(tasks: List<Task>) {
-		tasks.forEach { displayTask(it, 0) }
+		tasks.forEachIndexed { i, t -> displayTask(t, i) }
 	}
 
 	fun displayReport(tasks: List<Task>) {
@@ -14,6 +14,8 @@ interface IOutput {
 	}
 
 	fun displayReportTask(task: Task)
+
+	fun displayText(string: String)
 
 	companion object Factory {
 		operator fun get(type: OutputType): IOutput = when (type) {

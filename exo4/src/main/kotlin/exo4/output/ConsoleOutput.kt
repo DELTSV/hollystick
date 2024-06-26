@@ -14,4 +14,8 @@ class ConsoleOutput: IOutput {
 	override fun displayReportTask(task: Task) {
 		println("- ${task.name} (${task.creationDate.toLocalDateTime(TimeZone.currentSystemDefault()).date})")
 	}
+
+	override fun displayText(string: String) {
+		println(string)
+	}
 }

@@ -18,4 +18,8 @@ class FileOutput(fileName: String): IOutput {
 	override fun displayReportTask(task: Task) {
 		file.appendText("- ${task.name} (${task.creationDate.toLocalDateTime(TimeZone.currentSystemDefault()).date})")
 	}
+
+	override fun displayText(string: String) {
+		file.appendText(string)
+	}
 }
